@@ -244,17 +244,6 @@ export default {
       if (sessionStorage.getItem('type') === 'modify') {
         this.addForm.productId = this.productId
       }
-      // 图片
-      // const productImgList = res.product.productImgList
-      // productImgList.forEach(item => {
-      //   console.log(item)
-      //   item = 'E:/wxWork/shg/images' + item.imgAddr
-      //   this.urltoImage(item, image => {
-      //     console.log('image', image)
-      //   })
-      // })
-      // this.fileList = productImgList
-      // console.log('fileList', this.fileList)
     },
 
     urltoImage(url, fn) {
@@ -305,43 +294,6 @@ export default {
         }
       }
     },
-    // async tabClicked() {
-    //   // 当用户点击切换tab栏时触发
-    //   if (this.activeIndex === '1') {
-    //     // 发送请求获取动态参数
-    //     const { data: res } = await this.$http.get(
-    //       `categories/${this.cateId}/attributes`,
-    //       {
-    //         params: { sel: 'many' }
-    //       }
-    //     )
-
-    //     if (res.meta.status !== 200) {
-    //       return this.$message.error('获取动态参数列表失败')
-    //     }
-    //     // 将attr_vals字符串转换为数组
-    //     res.data.forEach(item => {
-    //       item.attr_vals =
-    //         item.attr_vals.length === 0 ? [] : item.attr_vals.split(' ')
-    //     })
-    //     console.log(res.data)
-    //     this.manyTableData = res.data
-    //   } else if (this.activeIndex === '2') {
-    //     // 发送请求获取静态属性
-    //     const { data: res } = await this.$http.get(
-    //       `categories/${this.cateId}/attributes`,
-    //       {
-    //         params: { sel: 'only' }
-    //       }
-    //     )
-
-    //     if (res.meta.status !== 200) {
-    //       return this.$message.error('获取静态属性列表失败')
-    //     }
-
-    //     this.onlyTableData = res.data
-    //   }
-    // },
     handleChange(file, fileList) {
       console.log('handleChange', file)
       console.log('handleChange', fileList)
