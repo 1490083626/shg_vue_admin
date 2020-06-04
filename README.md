@@ -1,6 +1,11 @@
 # shg_vue_admin
 
+校园二手交易平台Vue管理后台
+
+预览：http://wudiling.cn:8998/
+
 ## Project setup
+
 ```
 npm install
 ```
